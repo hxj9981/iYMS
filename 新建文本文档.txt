@@ -1,0 +1,25 @@
+c=[[]]
+for j in range(math.ceil(NUM/COL/RAW)):
+    SN=[x+1+COL*RAW*j for x in range(int(min((NUM,COL*RAW*(j+1)))))]
+    for i in SN:
+        c[j]=c[j]+[int(i/COL)] #c[j] seams not equally numer 0,1,1etc 这里会出错，看起来从c[j]不等价与c[j所代表的值]  j若不是字母而是具体值时候并不会出错
+    """   
+        print("cellinSN:")
+        print(i%COL)
+        print(",")
+        print(i/RAW)
+    """
+    c=c+c[j]
+
+
+
+
+
+##########################
+j=0
+c[j]=c[j]+[1] #出错
+c[0]=c[0]+[1] #不出错
+
+
+#####################
+dict.iteritems() #AttributeError: 'dict' object has no attribute 'iteritems'
