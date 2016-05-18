@@ -1,4 +1,4 @@
-#version2
+#version2shsh
 c=[[]]
 for j in range(math.ceil(NUM/COL/RAW)):
     SN=[x+1+COL*RAW*j for x in range(int(min((NUM,COL*RAW*(j+1)))))]
