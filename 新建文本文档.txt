@@ -1,8 +1,9 @@
+#version2
 c=[[]]
 for j in range(math.ceil(NUM/COL/RAW)):
     SN=[x+1+COL*RAW*j for x in range(int(min((NUM,COL*RAW*(j+1)))))]
     for i in SN:
-        c[j]=c[j]+[int(i/COL)] #c[j] seams not equally numer 0,1,1etc ÕâÀï»á³ö´í£¬¿´ÆğÀ´´Óc[j]²»µÈ¼ÛÓëc[jËù´ú±íµÄÖµ]  jÈô²»ÊÇ×ÖÄ¸¶øÊÇ¾ßÌåÖµÊ±ºò²¢²»»á³ö´í
+        c[j]=c[j]+[int(i/COL)] #c[j] seams not equally numer 0,1,1etc è¿™é‡Œä¼šå‡ºé”™ï¼Œçœ‹èµ·æ¥ä»c[j]ä¸ç­‰ä»·ä¸c[jæ‰€ä»£è¡¨çš„å€¼]  jè‹¥ä¸æ˜¯å­—æ¯è€Œæ˜¯å…·ä½“å€¼æ—¶å€™å¹¶ä¸ä¼šå‡ºé”™
     """   
         print("cellinSN:")
         print(i%COL)
@@ -17,8 +18,8 @@ for j in range(math.ceil(NUM/COL/RAW)):
 
 ##########################
 j=0
-c[j]=c[j]+[1] #³ö´í
-c[0]=c[0]+[1] #²»³ö´í
+c[j]=c[j]+[1] #å‡ºé”™
+c[0]=c[0]+[1] #ä¸å‡ºé”™
 
 
 #####################
